@@ -7,9 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Author extends Model
 {
+
     use HasFactory;
 
     protected $fillable = ['name', 'photo', 'bio'];
+
+    protected $table = 'authors';
 
     public function books()
     {

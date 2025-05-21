@@ -18,10 +18,11 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
 
-        // ✅ Tambahkan pemanggilan seeder Author dan Book di sini
+        // ✅ Pemanggilan seeder
         $this->call([
             AuthorSeeder::class,
             BookSeeder::class,
+            GenreSeeder::class,
         ]);
     }
 }
